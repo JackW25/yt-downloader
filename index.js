@@ -17,17 +17,17 @@ app.get('/', function(request, response) {
 app.get('/mp4', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Video.mp4');
-    ytdl(url, {format: 'mp4'}).pipe(res);
+    ytdl(url, {format: 'mp4'}).pipe(response);
 });
 
 app.get('/mp3', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Audio.mp3');
-    ytdl(url, {format: 'mp3'}).pipe(res);
+    ytdl(url, {format: 'mp3'}).pipe(response);
 });
 
 app.get('/wav', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Waveform.wav');
-    ytdl(url, {format: 'wav'}).pipe(res);
+    ytdl(url, {format: 'wav'}).pipe(response);
 });
