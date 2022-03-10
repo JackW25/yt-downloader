@@ -3,11 +3,11 @@ const cors = require('cors');
 const ytdl = require('ytdl-core');
 const app = express();
 
-app.set('port', (process.env.PORT || 5000));
+const PORT = process.env.PORT || 3000;
 
 app.use('/static', express.static('./static'));
-app.listen(5000, () => {
-    console.log("Website Online!");
+app.listen(PORT, () => {
+    console.log(`Website Online!, \n Port: ${PORT}`);
 });
 
 app.get('/', function(request, response) {
