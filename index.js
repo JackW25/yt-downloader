@@ -11,10 +11,6 @@ app.listen(PORT, () => {
 });
 
 app.get('/', function(request, response) {
-    var result = 'App is running'
-});
-
-app.get('/', (req, res) => {
     res.sendFile('index.html', { root: './' });
 })
 
