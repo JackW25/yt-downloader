@@ -12,34 +12,59 @@
         <style type="text/css">
             #banner{
                 height:100vh;
-                background-image: linear-gradient(to right, white 0%, black 100%), url('./static/bg-image.jpg');
+                background-image: url('./static/bg-image.jpg');
                 background-blend-mode: color-dodge;
             }
             #banner .container-fluid .jumbotron{
                 background: transparent;
             }
+            #form-submit-button {
+                background: #475C5C;
+                color: white;
+                border-style: outset;
+                border-color: #83B0A8;
+                height: 50px;
+                width: 100px;
+                font: bold15px arial,sans-serif;
+                text-shadow: none;
+                }
+
+                #form-submit-button:hover {
+                background: #016ABC;
+                color: #fff;
+                border: 1px solid #eee;
+                border-radius: 20px;
+                box-shadow: 5px 5px 5px #eee;
+                text-shadow: none;
+                }
         </style>
     </head>
     <body>
         <div id="banner">
             <div class="container-fluid">
                 <div class="jumbotron text-center">
-                    <h3>Rainure YouTube Downloader</h3>
+                    <h3 style="color:#83B0A8;">Rainure YT Downloader</h3>
                 </div>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
+                    <div>
+                    </div>
                         <form>
                             <div class="form-group">
                               <input class="form-control" type="search" name="url" placeholder="Enter a YT URL" required />
                             </div>
-                            <span>
+                            <spacer>
+                            </spacer>
                             <div class="form-group text-center">
+                                <h5 style="color:#83B0A8;">Video Formats</h5>
+                            <span>
                                 <input class="btn btn-primary" type="submit" value="MP4" formaction="/mp4" />
                                 <input class="btn btn-primary" type="submit" value="FLV" formaction="/flv" />
                                 <input class="btn btn-primary" type="submit" value="WEBM" formaction="/webm" />
                             </div>
                             </span>
                             <div class="form-group text-center">
+                                <h5 style="color:#83B0A8;">Audio Formats</h5>
                             <span>
                                 <input class="btn btn-primary" type="submit" value="MP3" formaction="/mp3" />
                                 <input class="btn btn-primary" type="submit" value="WAV" formaction="/wav" />

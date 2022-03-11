@@ -1,34 +1,23 @@
-.btn {
-	background-color: DodgerBlue;
-	border: white;
-	color: white;
-	padding: 12px 30px;
-	cursor: pointer;
-	font-size: 20px;
-	 position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+h3 {
+    font-color: #475c5c;
 }
 
-.btn:hover {
-	background-color: RoyalBlue;
+.form-submit-button {
+background: #475C5C;
+color: white;
+border-style: outset;
+border-color: #83B0A8;
+height: 50px;
+width: 100px;
+font: bold15px arial,sans-serif;
+text-shadow: none;
 }
 
-body {
-          display: grid;
-          grid-auto-flow: column;
-          gap: 6px;
-      }
-
-      div {
-          border: 2px solid #2ecc71;
-          margin-left: 6px;
-      }
-
-      @media screen and (max-width: 768px) {
-        body {
-            grid-auto-flow: row;
-            font-size: 1.5rem;
-        } 
-     }
+.form-submit-button:hover {
+background: #016ABC;
+color: #fff;
+border: 1px solid #eee;
+border-radius: 20px;
+box-shadow: 5px 5px 5px #eee;
+text-shadow: none;
+}
