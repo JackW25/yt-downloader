@@ -9,6 +9,7 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2ddd5825e5.js" crossorigin="anonymous"></script>
         <style type="text/css">
             #banner{
                 height:100vh;
@@ -18,25 +19,6 @@
             #banner .container-fluid .jumbotron{
                 background: transparent;
             }
-            #form-submit-button {
-                background: #475C5C;
-                color: white;
-                border-style: outset;
-                border-color: #83B0A8;
-                height: 50px;
-                width: 100px;
-                font: bold15px arial,sans-serif;
-                text-shadow: none;
-                }
-
-                #form-submit-button:hover {
-                background: #016ABC;
-                color: #fff;
-                border: 1px solid #eee;
-                border-radius: 20px;
-                box-shadow: 5px 5px 5px #eee;
-                text-shadow: none;
-                }
         </style>
     </head>
     <body>
@@ -56,19 +38,21 @@
                             <spacer>
                             </spacer>
                             <div class="form-group text-center">
-                                <h5 style="color:#83B0A8;">Video Formats</h5>
                             <span>
-                                <input class="btn btn-primary" type="submit" value="MP4" formaction="/mp4" />
-                                <input class="btn btn-primary" type="submit" value="FLV" formaction="/flv" />
-                                <input class="btn btn-primary" type="submit" value="WEBM" formaction="/webm" />
+                                <h5 style="color:#83B0A8;"><i class="fas fa-video"></i> Video Formats</h5>
+                               </span>
+                            <span>
+                                <input class="btn btn-primary" type="submit" value="MP4" formaction="/mp4" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
+                                <input class="btn btn-primary" type="submit" value="FLV" formaction="/flv" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
+                                <input class="btn btn-primary" type="submit" value="WEBM" formaction="/webm" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
                             </div>
                             </span>
                             <div class="form-group text-center">
-                                <h5 style="color:#83B0A8;">Audio Formats</h5>
+                                <h5 style="color:#83B0A8;"><i class="fas fa-headphones"></i> Audio Formats</h5>
                             <span>
-                                <input class="btn btn-primary" type="submit" value="MP3" formaction="/mp3" />
-                                <input class="btn btn-primary" type="submit" value="WAV" formaction="/wav" />
-                                <input class="btn btn-primary" type="submit" value="OGG" formaction="/ogg" />
+                                <input class="btn btn-primary" type="submit" value="MP3" formaction="/mp3" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
+                                <input class="btn btn-primary" type="submit" value="WAV" formaction="/wav" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
+                                <input class="btn btn-primary" type="submit" value="OGG" formaction="/ogg" style="height: 45px; width: 90px; border-style: outset; border-radius: 20px; text-shadow: #fc0 1px 0 10px;" />
                            </span>
                            </div>
                         </form>
