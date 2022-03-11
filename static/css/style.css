@@ -27,7 +27,7 @@ h5 {
 }
 #banner{
     height:100vh;
-    background-image: url('./static/bg-image.jpg');
+    background-color: #464343;
     background-blend-mode: color-dodge;
 }
 #banner .container-fluid .jumbotron{
