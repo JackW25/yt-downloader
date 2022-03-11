@@ -8,12 +8,14 @@ h5 {
 
 .form-submit-button {
     background: #475C5C;
-    color: white;
+    font-color: white;
     border-style: outset;
     border-color: #83B0A8;
     height: 50px;
     width: 100px;
-    font: bold15px arial,sans-serif;
+    font: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
     text-shadow: none;
 }
 
