@@ -11,8 +11,13 @@ app.listen(PORT, () => {
 });
 
 app.get('/', function(request, response) {
-    response.sendFile('index.html', { root: './' });
+    response.sendFile('homepage.html', { root: './' });
     console.log('Homepage Landed');
+});
+
+app.get('/download', function(request, response){
+    response.sendFile('index.html', {root:'./'});
+    console.log('Download page Landed');
 });
     
 app.get('/mp4', (request, response) => {
