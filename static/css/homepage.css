@@ -62,5 +62,6 @@ margin-bottom: 2rem;
 border-bottom: none;
 border-top-width: 1px;
 border-top-style: solid;
-border-top-color: #fff;
+border-top-color: #2C3F45;
+border-bottom-color: #2C3F45;
 }
