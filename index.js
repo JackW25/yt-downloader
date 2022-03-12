@@ -15,11 +15,16 @@ app.get('/', function(request, response) {
     console.log('Homepage Landed');
 });
 
-app.get('/download', function(request, response){
+app.get('/yt-downloader', function(request, response){
     response.sendFile('index.html', {root:'./'});
-    console.log('Download page Landed');
+    console.log('Downloader page Landed');
 });
-    
+
+app.get('/downloads', function(request, response){
+    response.sendFile('downloads.html', {root:'./'});
+    console.log('Downloads page Landed');
+});
+
 app.get('/mp4', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Video.mp4');
