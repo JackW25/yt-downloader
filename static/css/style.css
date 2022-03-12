@@ -27,12 +27,12 @@ h5 {
     box-shadow: 5px 5px 5px #eee;
     text-shadow: none;
 }
-#banner{
+.banner{
     height:100vh;
     background-color: ##2C3F45;
     background-blend-mode: color-dodge;
 }
-#banner .container-fluid .jumbotron{
+.banner .container-fluid .jumbotron{
     background: transparent;
 }
 
