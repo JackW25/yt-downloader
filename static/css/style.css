@@ -36,6 +36,9 @@ h5 {
     background: transparent;
 }
 
+.div.jumbotron.text-center{
+    background-color:#2C3F45;
+}
 .btn.btn-primary {
     height: 45px;
     width: 90px;
