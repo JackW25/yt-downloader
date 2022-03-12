@@ -27,7 +27,7 @@ h5 {
     box-shadow: 5px 5px 5px #eee;
     text-shadow: none;
 }
-.banner{
+.main{
     height:100vh;
     background-color: ##2C3F45;
     background-blend-mode: color-dodge;
@@ -44,7 +44,7 @@ h5 {
     text-shadow: #fc0 1px 0 10px;
 }
             
-.banner {
+.main {
                 height:100vh;
                 background-image: url('./static/bg-image.jpg');
                 background-blend-mode: color-dodge;
