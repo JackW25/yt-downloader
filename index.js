@@ -10,12 +10,12 @@ app.listen(PORT, () => {
     console.log(`Website Online!, \n Port: ${PORT}`);
 });
 
-app.get('/', function(request, response) {
+app.get('/homepage', function(request, response) {
     response.sendFile('homepage.html', { root: './' });
     console.log('Homepage Landed');
 });
 
-app.get('/download', function(request, response){
+app.get('/', function(request, response){
     response.sendFile('index.html', {root:'./'});
     console.log('Download page Landed');
 });
