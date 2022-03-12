@@ -1,4 +1,4 @@
-# yt-downloader'
+# YT-downloader
 
 Made by: JackW25
 
