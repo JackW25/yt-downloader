@@ -1,5 +1,5 @@
 h3 {
-    color: #475c5c;
+    color: white;
 }
 
 h5 {
@@ -52,5 +52,8 @@ h5 {
 .banner .container-fluid .jumbotron{
                 background: transparent;
             }
+p{
+ color: white;
+}
 
 
