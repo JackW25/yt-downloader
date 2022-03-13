@@ -17,22 +17,22 @@ app.get('/', function(request, response) {
 
 app.get('/fr', function(request, response) {
     response.sendFile('homepage_fr.html', { root: './localized/fr' });
-    console.log('Homepage Landed');
+    console.log('Homepage Landed FR');
 });
 
 app.get('/es', function(request, response) {
     response.sendFile('homepage_es.html', { root: './localized/es' });
-    console.log('Homepage Landed');
+    console.log('Homepage Landed ES');
 });
 
 app.get('/yt-downloader-fr', function(request, response) {
     response.sendFile('index_fr.html', { root: './localized/fr' });
-    console.log('Homepage Landed');
+    console.log('Homepage Landed FR');
 });
 
 app.get('/yt-downloader-es', function(request, response) {
     response.sendFile('index_es.html', { root: './localized/es' });
-    console.log('Homepage Landed');
+    console.log('Homepage Landed ES');
 });
 
 app.get('/yt-downloader', function(request, response){
