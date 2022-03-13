@@ -15,6 +15,26 @@ app.get('/', function(request, response) {
     console.log('Homepage Landed');
 });
 
+app.get('/fr', function(request, response) {
+    response.sendFile('homepage_fr.html', { root: './localized/fr' });
+    console.log('Homepage Landed');
+});
+
+app.get('/es', function(request, response) {
+    response.sendFile('homepage_es.html', { root: './localized/es' });
+    console.log('Homepage Landed');
+});
+
+app.get('/yt-downloader-fr', function(request, response) {
+    response.sendFile('index_fr.html', { root: './localized/fr' });
+    console.log('Homepage Landed');
+});
+
+app.get('/yt-downloader-es', function(request, response) {
+    response.sendFile('index_es.html', { root: './localized/es' });
+    console.log('Homepage Landed');
+});
+
 app.get('/yt-downloader', function(request, response){
     response.sendFile('index.html', {root:'./'});
     console.log('Downloader page Landed');

@@ -3,8 +3,14 @@
 
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" /> 
-        <title>FR_Rainure Téléchargeur</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FR-YouTube Downloader</title>
+        <meta content="Rainure YT Downloader" property="og:title" />
+        <meta content="Rainure YT Downloader peut convertir des vidéos YT régulières en de nombreux formats audio et vidéo différents. Il est 100% sûr et gratuit sans popups bizarres, nous mettons régulièrement à jour le site Web avec de nouveaux contenus et looks, alors restez à l’écoute pour le nouveau contenu!" property="og:description" />
+        <meta content="https://rainure-yt-downloader.herokuapp.com/yt-downloader" property="og:url" />
+        <meta content="static/embed.png" property="og:image" />
+        <meta content="#2C3F45" data-react-helmet="true" name="theme-color" />
+        <link rel="icon" href="static/icon.png" type="image/icon type">
         <link rel="icon" href="static/icon.png" type="image/icon type">
         <meta charset="utf-8" />
         <link rel="stylesheet" type="text/css" href="static/css/style.css"/>
@@ -19,10 +25,23 @@
                 background-blend-mode: color-dodge;
             }
             </style>
+            <ul class="sidenav">
+              <li><a class="active" href="/fr">Domicile</a></li>
+              <li><a href="/yt-downloader-fr">YT Telechargeur</a></li>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Traduction</a>
+                <div class="dropdown-content">
+                  <a href="/yt-downloader-fr"><i class="fa-solid fa-language"></i> FR</a>
+                  <a href="/yt-downloader"><i class="fa-solid fa-language"></i> EN</a>
+                  <a href="/yt-downloader-es"><i class="fa-solid fa-language"></i> ES</a>
+                </div>
+              </li>
+            </ul>
+        </div>
         <div class="main">
             <div class="container-fluid">
                 <div class="jumbotron text-center">
-                    <h3>FR_Rainure YT Téléchargeur</h3>
+                    <h3>Rainure YT Downloader</h3>
                 </div>
                 <div class="row">
                     <div class="col-md-4 offset-md-4">
@@ -34,7 +53,7 @@
                             </div>
                             <div class="form-group text-center">
                             <span>
-                                <h5><i class="fas fa-video"></i> Formats vidéo</h5>
+                                <h5><i class="fas fa-video"></i> Formats video</h5>
                                </span>
                             <span>
                                 <input class="btn btn-primary" type="submit" value="MP4" formaction="/mp4"/>
@@ -56,7 +75,7 @@
                         </hr>
                         <form>
                         <div>
-                            <p>Rainure YT Downloader est un moyen totalement gratuit et sûr de convertir YT en une variété de formats différents. Le site Web ne contient aucun suivi ou popups suspects, et est entièrement gratuit à utiliser.</p>
+                            <p>Rainure YT Downloader est un moyen totalement gratuit et sur de convertir YT en une variete de formats differents. Le site Web ne contient aucun suivi ou popups suspects, et est entierement gratuit a utiliser.</p>
                             </div>
                         </form>
                     </div>
