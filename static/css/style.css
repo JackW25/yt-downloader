@@ -10,6 +10,12 @@ h1, h4 {
     color: white;
 }
 
+a{
+    font-color: white;
+}
+
+
+
 .form-submit-button {
     background: #475C5C;
     font-color: white;
