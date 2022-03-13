@@ -41,7 +41,7 @@ h1, h4 {
 }
 
 .jumbotron.text-center{
-    background-color :#2C3F45;
+    background-color: #2C3F45;
 }
 .btn.btn-primary {
     height: 45px;
@@ -90,7 +90,7 @@ ul.sidenav li a {
  
 ul.sidenav li a.active {
   background-color: #4CAF50;
-  color: white;
+  font-color: white;
 }
 
 ul.sidenav li a:hover:not(.active) {
