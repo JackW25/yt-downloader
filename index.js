@@ -10,6 +10,7 @@ app.listen(PORT, () => {
     console.log(`Website Online!, \n Port: ${PORT}`);
 });
 
+    // Homepage //
 app.get('/', function(request, response) {
     response.sendFile('homepage.html', { root: './' });
     console.log('Homepage Landed');
@@ -25,6 +26,23 @@ app.get('/es', function(request, response) {
     console.log('Homepage Landed ES');
 });
 
+app.get('/s1', function(request, response) {
+    response.sendFile('homepage.html', { root: './styled/grass' });
+    console.log('Homepage Landed');
+});
+
+app.get('/fr-s1', function(request, response) {
+    response.sendFile('homepage_fr.html', { root: './styled/fr/grass' });
+    console.log('Homepage Landed FR');
+});
+
+app.get('/es-s1', function(request, response) {
+    response.sendFile('homepage_es.html', { root: './styled/es/grass' });
+    console.log('Homepage Landed ES');
+});
+
+
+    // Downloader Page //
 app.get('/yt-downloader-fr', function(request, response) {
     response.sendFile('index_fr.html', { root: './localized/fr' });
     console.log('Homepage Landed FR');
@@ -40,11 +58,23 @@ app.get('/yt-downloader', function(request, response){
     console.log('Downloader page Landed');
 });
 
+       // Downloads Page //
 app.get('/ohno', function(request, response){
     response.sendFile('downloads.html', {root:'./'});
     console.log('Downloader page Landed');
 });
 
+app.get('/ohno-fr', function(request, response){
+    response.sendFile('downloads_fr.html', {root:'./localized/fr'});
+    console.log('Downloader page Landed');
+});
+
+app.get('/ohno-es', function(request, response){
+    response.sendFile('downloads_es.html', {root:'./localized/es'});
+    console.log('Downloader page Landed');
+});
+
+    // File Conversions //
 app.get('/mp4', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Video.mp4');

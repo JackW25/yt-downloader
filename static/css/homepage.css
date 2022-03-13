@@ -67,7 +67,6 @@ border-top-style: solid;
 form {
     color: #2C3F45;
 }
-
 body {
   margin: 0;
 }
@@ -78,7 +77,7 @@ ul.sidenav {
   margin: 0;
   padding: 0;
   width: 15%;
-  background-color: #2C3F45;
+  background-color: #2C3F50;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -86,14 +85,14 @@ ul.sidenav {
 
 ul.sidenav li a {
   display: block;
-  color: #000;
+  color: #F1F1F1;
   padding: 8px 16px;
   text-decoration: none;
 }
  
 ul.sidenav li a.active {
   background-color: #4CAF50;
-  color: white;
+  font-color: white;
 }
 
 ul.sidenav li a:hover:not(.active) {
@@ -132,7 +131,7 @@ div.content {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #B3B3B3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -146,7 +145,7 @@ div.content {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #F1F1F1;}
+.dropdown-content a:hover {background-color: #2C3F45;}
 
 .dropdown:hover .dropdown-content {
   display: block;
