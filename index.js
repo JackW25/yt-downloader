@@ -20,9 +20,9 @@ app.get('/yt-downloader', function(request, response){
     console.log('Downloader page Landed');
 });
 
-app.get('/downloads', function(request, response){
+app.get('/ohno', function(request, response){
     response.sendFile('downloads.html', {root:'./'});
-    console.log('Downloads page Landed');
+    console.log('Downloader page Landed');
 });
 
 app.get('/mp4', (request, response) => {
