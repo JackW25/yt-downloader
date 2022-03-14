@@ -14,12 +14,6 @@ a{
     font-color: white;
 }
 
-
-
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 .form-submit-button {
     background: #475C5C;
     font-color: white;
@@ -93,23 +87,19 @@ ul.sidenav {
 
 ul.sidenav li a {
   display: block;
-  color: #FFF;
+  color: #F1F1F1;
   padding: 8px 16px;
   text-decoration: none;
 }
  
 ul.sidenav li a.active {
   background-color: #4CAF50;
-<<<<<<< Updated upstream
   font-color: white;
-=======
-  color: black;
->>>>>>> Stashed changes
 }
 
 ul.sidenav li a:hover:not(.active) {
   background-color: #555;
-  color: black;
+  color: white;
 }
 
 div.content {
@@ -143,7 +133,7 @@ div.content {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #F1F1F1;
+  background-color: #B3B3B3;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
