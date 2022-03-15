@@ -79,40 +79,73 @@ app.get('/mp4', (request, response) => {
     var url = request.query.url;
     response.header("Content-Disposition", 'attachment; filename="Video.mp4');
     ytdl(url, {format: 'mp4'}).pipe(response);
-    console.log(url);
+        if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        };
 });
 
 app.get('/mp3', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Audio.mp3');
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+        response.header("Content-Disposition", `attachment; filename="${title}.mp3`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    console.log(`${url}.mp3`);
+            if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        };
+    });
 });
 
 app.get('/wav', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Waveform.wav');
-    ytdl(url, {format: 'wav'}).pipe(response);
-    console.log(`${url}.wav`);
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+        response.header("Content-Disposition", `attachment; filename="${title}.wav`);
+    ytdl(url, {format: 'mp3'}).pipe(response);
+            if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        };
+    });
 });
 
 app.get('/ogg', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Vorbis.ogg');
-    ytdl(url, {format: 'ogg'}).pipe(response);
-    console.log(`${url}.ogg`);
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+        response.header("Content-Disposition", `attachment; filename="${title}.ogg`);
+    ytdl(url, {format: 'mp3'}).pipe(response);
+            if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        };
+    });
 });
 
 app.get('/webm', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Opus.webm');
-    ytdl(url, {format: 'webm'}).pipe(response);
-    console.log(`${url}.webm`);
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+        response.header("Content-Disposition", `attachment; filename="${title}.webm`);
+    ytdl(url, {format: 'mp3'}).pipe(response);
+            if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        };
+    });
 });
 
 app.get('/flv', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Flash.flv');
-    ytdl(url, {format: 'flv'}).pipe(response);
-    console.log(`${url}.flv`);
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+        response.header("Content-Disposition", `attachment; filename="${title}.flv`);
+    ytdl(url, {format: 'mp3'}).pipe(response);
+            if(!ytdl.validateURL(url)) {
+        return response.sendStatus(400);
+        console.log('Could not validate')
+        };
+    });
 });
