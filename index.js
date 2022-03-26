@@ -77,11 +77,12 @@ app.get('/ohno-es', function(request, response){
     // File Conversions //
 app.get('/mp4', (request, response) => {
     var url = request.query.url;
-    response.header("Content-Disposition", 'attachment; filename="Video.mp4');
+        ytdl.getInfo(url).then(info => {
+           console.log(info.videoDetails.title);
+           var title = info.videoDetails.title
+    response.header("Content-Disposition", `attachment; filename="${title}.mp4`);
     ytdl(url, {format: 'mp4'}).pipe(response);
-        if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        };
+        });
 });
 
 app.get('/mp3', (request, response) => {
@@ -91,7 +92,6 @@ app.get('/mp3', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.mp3`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    .catch(console.error);
     });
 });
 
@@ -102,7 +102,6 @@ app.get('/wav', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.wav`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    .catch(console.error);
     });
 });
 
@@ -113,7 +112,6 @@ app.get('/ogg', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.ogg`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    .catch(console.error);
     });
 });
 
@@ -124,7 +122,6 @@ app.get('/webm', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.webm`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    .catch(console.error);
     });
 });
 
@@ -135,6 +132,5 @@ app.get('/flv', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.flv`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-    .catch(console.error);
     });
 });
