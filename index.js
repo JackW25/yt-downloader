@@ -91,9 +91,7 @@ app.get('/mp3', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.mp3`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-            if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        };
+    .catch(console.error);
     });
 });
 
@@ -104,9 +102,7 @@ app.get('/wav', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.wav`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-            if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        };
+    .catch(console.error);
     });
 });
 
@@ -117,9 +113,7 @@ app.get('/ogg', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.ogg`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-            if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        };
+    .catch(console.error);
     });
 });
 
@@ -130,9 +124,7 @@ app.get('/webm', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.webm`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-            if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        };
+    .catch(console.error);
     });
 });
 
@@ -143,9 +135,6 @@ app.get('/flv', (request, response) => {
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.flv`);
     ytdl(url, {format: 'mp3'}).pipe(response);
-            if(!ytdl.validateURL(url)) {
-        return response.sendStatus(400);
-        console.log('Could not validate')
-        };
+    .catch(console.error);
     });
 });
