@@ -101,7 +101,7 @@ app.get('/wav', (request, response) => {
            console.log(info.videoDetails.title);
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.wav`);
-    ytdl(url, {format: 'mp3'}).pipe(response);
+    ytdl(url, {format: 'wav'}).pipe(response);
     });
 });
 
@@ -111,7 +111,7 @@ app.get('/ogg', (request, response) => {
            console.log(info.videoDetails.title);
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.ogg`);
-    ytdl(url, {format: 'mp3'}).pipe(response);
+    ytdl(url, {format: 'ogg'}).pipe(response);
     });
 });
 
@@ -121,7 +121,7 @@ app.get('/webm', (request, response) => {
            console.log(info.videoDetails.title);
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.webm`);
-    ytdl(url, {format: 'mp3'}).pipe(response);
+    ytdl(url, {format: 'webm'}).pipe(response);
     });
 });
 
@@ -131,6 +131,6 @@ app.get('/flv', (request, response) => {
            console.log(info.videoDetails.title);
            var title = info.videoDetails.title
         response.header("Content-Disposition", `attachment; filename="${title}.flv`);
-    ytdl(url, {format: 'mp3'}).pipe(response);
+    ytdl(url, {format: 'flv'}).pipe(response);
     });
 });
